@@ -1,0 +1,5 @@
+@media (max-width: 1200px) {
+    svg.teaser__img {
+        z-index: 1;
+    }
+}
