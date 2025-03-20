@@ -238,7 +238,6 @@ svg.teaser__img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 56px 0;
     height: 100dvh;
 }
 
@@ -517,7 +516,6 @@ svg.teaser__img {
 
 .final-text {
     background: var(--red-color);
-    padding: 30px 0;
 }
 
 .final-text__inner {
