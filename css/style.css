@@ -239,6 +239,7 @@ svg.teaser__img {
     justify-content: center;
     align-items: center;
     padding: 56px 0;
+    height: 100vh;
 }
 
 .loader__inner-hex {
