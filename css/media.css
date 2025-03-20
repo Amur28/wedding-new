@@ -1,5 +1,67 @@
 @media (max-width: 1200px) {
-    svg.teaser__img {
-        z-index: 1;
+    .teaser__inner {
+        justify-content: center;
+    }
+    .teaser__text .text {
+        bottom: auto;
+        top: calc(50% + 2em);
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
+@media (max-width: 780px) {
+    .teaser__text .title,
+    .final-text__inner h2 {
+        font-size: 90px;
+    }
+    .teaser__text .text {
+        font-size: 24px;
+    }
+    .final-text__inner p {
+        font-size: 40px;
+    }
+    .teaser__text {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .teaser__text .title,
+    .final-text__inner h2 {
+        font-size: 78px;
+    }
+    .teaser__text .text {
+        font-size: 20px;
+    }
+    .final-text__inner p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 520px) {
+    .teaser__text .title,
+    .final-text__inner h2 {
+        font-size: 60px;
+    }
+    .teaser__text .text {
+        font-size: 16px;
+    }
+    .final-text__inner p {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 420px) {
+    .teaser__text .title,
+    .final-text__inner h2 {
+        font-size: 46px;
+    }
+    .teaser__text .text {
+        font-size: 16px;
+    }
+    .final-text__inner p {
+        font-size: 40px;
     }
 }

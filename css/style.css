@@ -195,7 +195,7 @@ select::-ms-expand {
     color: var(--red-color);
 }
 
-svg {
+svg.teaser__img {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -524,6 +524,7 @@ svg {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .final-text__inner h2,
