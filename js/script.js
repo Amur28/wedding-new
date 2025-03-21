@@ -20,13 +20,16 @@ $(function () {
         touchScroll: true,
         before: function () { },
         after: function (index) {
-            const activeSlide = document.querySelector('.swiper-slide-active')
-            if (index == 2) {
-                activeSlide.querySelector('video').currentTime = 0
-                activeSlide.querySelector('video').play()
-            } else {
-                activeSlide.querySelector('video').pause()
+            const activeSlide = document.querySelector('.videos-slide.swiper-slide-active')
+            if (activeSlide) {
+                if (index == 2) {
+                    activeSlide.querySelector('video').currentTime = 0
+                    activeSlide.querySelector('video').play()
+                } else {
+                    activeSlide.querySelector('video').pause()
+                }
             }
+            
         },
         afterResize: function () { },
         afterRender: function () { }
@@ -82,12 +85,15 @@ const hideOtherItems = (elArr, className) => {
 
 reelsSwiper.on('transitionEnd', function () {
     reelsSwiper.slides.forEach((item) => {
-        const video = item.querySelector('video');
-        video.pause()
+        if (item.classList.contains('videos-slide')) {
+            const video = item.querySelector('video');
+            video.pause()
+        }
     })
-    const activeSlide = reelsSwiper.el.querySelector('.swiper-slide-active')
-    const video = activeSlide.querySelector('video')
-    video.currentTime = 0;
-    video.play();
-    // reelsSwiper.slides
+    const activeSlide = reelsSwiper.el.querySelector('.videos-slide.swiper-slide-active')
+    if (activeSlide) {
+        const video = activeSlide.querySelector('video')
+        video.currentTime = 0;
+        video.play();
+    }
 })
