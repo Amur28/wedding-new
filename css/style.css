@@ -336,6 +336,19 @@ svg.teaser__img {
     }
 }
 
+.loader {
+    position: relative;
+}
+
+.loader img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
 .reels {
     background: var(--red-color);
     height: 100dvh;
