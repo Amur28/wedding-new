@@ -24,6 +24,7 @@ $(function () {
             if (activeSlide) {
                 if (index == 2) {
                     activeSlide.querySelector('video').currentTime = 0
+                    activeSlide.querySelector('video').contorls = false;
                     activeSlide.querySelector('video').play()
                 } else {
                     activeSlide.querySelector('video').pause()
@@ -94,6 +95,9 @@ reelsSwiper.on('transitionEnd', function () {
     if (activeSlide) {
         const video = activeSlide.querySelector('video')
         video.currentTime = 0;
+        video.controls = false;
+        video.muted = false;
+        video.volume = 1;
         video.play();
     }
 })

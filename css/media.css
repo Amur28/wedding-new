@@ -1,13 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @media (max-width: 1200px) {
     .teaser__inner {
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .teaser__text .text {
         bottom: auto;
         top: calc(50% + 2em);
         right: 50%;
-        transform: translateX(50%);
+        -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+                transform: translateX(50%);
     }
 }
 
@@ -95,7 +106,7 @@
     .reels__phone {
         max-width: none;
         height: 100%;
-        max-height: 100vh;
+        max-height: 100svh;
     }
 
     .reels__phone::before {
@@ -103,7 +114,8 @@
     }
 
     .reels-swiper {
-        clip-path: none;
+        -webkit-clip-path: none;
+                clip-path: none;
     }
 
     .reels__bottom-line {
